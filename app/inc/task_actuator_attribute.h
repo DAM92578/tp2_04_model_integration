@@ -60,7 +60,7 @@ extern "C" {
  * 	|                       | EV_LED_XX_BLINK       |                       | ST_LED_XX_BLINK_ON    | tick = tick_max       |
  * 	|                       |                       |                       |                       | led = LED_ON			|
  * 	|                       |-----------------------+-----------------------+-----------------------+-----------------------|
- * 	|                       | EV_LED_XX_PULSE       |                       | ST_LED_XX_PULSE       | tick = tick_max       |
+ * 	|                       | EV_LED_XX_PULSE      |                       | ST_LED_XX_PULSE       | tick = tick_max       |
  * 	|                       |                       |                       |                       | led = LED_ON			|
  * 	|-----------------------+-----------------------+-----------------------+-----------------------+-----------------------|
  * 	| ST_LED_XX_ON          | EV_LED_XX_OFF         |                       | ST_LED_XX_OFF		    | led = LED_OFF         |
