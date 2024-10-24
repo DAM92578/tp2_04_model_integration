@@ -173,7 +173,6 @@ void task_system_update(void *parameters)
 
 				p_task_system_dta->flag = false;
 				put_event_task_actuator(EV_LED_XX_OFF, ID_LED_A);
-			/*	put_event_task_actuator(EV_LED_XX_PULSE, ID_LED_A);*//*Enciende led :señal para imprimir  ver tiempo de señal en alto tick*/
 				p_task_system_dta->state = ST_SYS_01_WAITING_TICKET_REMOVAL;
 			  }
 			break;
@@ -183,7 +182,7 @@ void task_system_update(void *parameters)
 			if ((true == p_task_system_dta->flag) && (EV_SYS_01_TICKET_PICKED_UP_ACTIVE == p_task_system_dta->event))
 			  {
 				p_task_system_dta->flag = false;
-				put_event_task_actuator(EV_LED_XX_BLINK, ID_LED_A); /*enciende led levanta barrera*/
+				put_event_task_actuator(EV_LED_XX_BLINK, ID_LED_A);
 				p_task_system_dta->state =ST_SYS_01_LIFTING_BARRIER;
 
 			  }

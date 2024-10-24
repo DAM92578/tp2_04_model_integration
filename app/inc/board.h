@@ -66,7 +66,14 @@ extern "C" {
 #define BTN_A_PRESSED	GPIO_PIN_RESET
 #define BTN_A_HOVER		GPIO_PIN_SET
 
-/*************************************************************/
+/**********************SENSORES*******************************/
+
+#define BTN_A_PIN		B1_Pin
+#define BTN_A_PORT		B1_GPIO_Port
+#define BTN_A_PRESSED	GPIO_PIN_RESET
+#define BTN_A_HOVER		GPIO_PIN_SET
+
+
 #define SNS_TICKET_NOT_TAKEN		       SNS_A1_Pin
 #define	SNS_TICKET_NOT_TAKEN_PORT		   SNS_A1_GPIO_Port
 #define SNS_TICKET_NOT_TAKEN_ACTIVATED     GPIO_PIN_RESET
@@ -100,12 +107,11 @@ extern "C" {
 #define SNS_PRINT_TICKET_BTN_PORT	        SNS_D4_GPIO_Port
 #define SNS_PRINT_TICKET_BTN_ACTIVATED      GPIO_PIN_RESET
 
-#define BARRIER_DOWN						SNS_D10_Pin
-#define BARRIER_DOWN_PORT					SNS_D10_GPIO_Port
-#define BTN_BARRIER_DOWN_ACTIVATED  		GPIO_PIN_RESET
-/**************************************************************/
+#define SNS_BARRIER_DOWN						SNS_D10_Pin
+#define SNS_BARRIER_DOWN_PORT					SNS_D10_GPIO_Port
+#define SNS_BTN_BARRIER_DOWN_ACTIVATED  		GPIO_PIN_RESET
 
-
+/*************************ACTUADORES*******************************/
 
 
 #define LED_A_PIN		LD2_Pin
